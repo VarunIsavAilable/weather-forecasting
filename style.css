@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    background: #1e1e1e;
+    color: #171717;
+}
+
+.container{
+    background: #fff;
+    color: #171717;
+    margin: 4rem auto;
+    padding: 2rem  ;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.weather_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border: none;
+    background: #1e1e1e;
+    color: #fff;
+    outline: none;
+    padding: 0.5rem 2.5rem;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input::placeholder{
+    color: #f7f7f7;
+}
+
+.weather_search{
+    position: relative;
+}
+
+.weather_search i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+/* 2nd phase */
+
+.weather_temperature{
+    text-align: center;
+
+    padding-top: .5rem;
+}
+
+.weather_city, weather_date_time{
+    text-align: center;
+    padding: 0.5rem 2.5rem;
+}
+
+.weather_date_time{
+    text-align: center;
+}
+
+.weather_minmax{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.5rem 2.5rem;
+}
+
+.weather_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_forecast{
+    width: 4rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2 rem;
+    margin-bottom: -1rem;
+    margin-top: 1rem;
+    background-color: #171717;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.weather_icon{
+    margin-bottom: -1rem;
+}
+
+
+
+/* 3re phase */
+.weather_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Defines column widths */
+    /* grid-template-rows: auto auto; Defines row heights */
+    gap: 10px; 
+
+    margin: 3rem auto 1rem;;
+}
+
+.weather_card{
+    display: flex;
+    gap: 20px;
+    border: 0.1px solid transparent;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #171717 ;
+
+    padding: 0.4rem;
+}
